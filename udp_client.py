@@ -81,7 +81,7 @@ def send_file(filename: str):
             raise Exception("Transfer failed!")
 
     except Exception as e:
-        print(f'An error occurred while sending the file: {e}')
+        print(f'An error occurred while sending the file:  {e}')
     finally:
         client_socket.close()
 

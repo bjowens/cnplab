@@ -8,7 +8,7 @@ BUFFER_SIZE = 1024  # change to a desired buffer size
 
 
 def get_file_info(data: bytes) -> (str, int):
-    return data[8:].decode(), int.from_bytes(data[:8], byteorder='big')
+    return data[8:].decode(), int.from_bytes(data[:8], byteorder= 'big')
 
 
 def upload_file(server_socket: socket, file_name: str, file_size: int):
